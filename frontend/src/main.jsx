@@ -1,5 +1,5 @@
 import React,{useEffect,useMemo,useState} from 'react';import{createRoot}from'react-dom/client';import{LayoutDashboard,ShoppingCart,Factory,Package,FileText,Settings,Bell,Plus,Search,Eye,ArrowLeft,Save,Send,CheckCircle2,Pencil,Trash2}from'lucide-react';import'./styles.css';
-const API='http://localhost:8000/api';
+const API='const API='https://production-management-api-sz9d.onrender.com/api';
 const menu=['Primary Production Order','Manufacturing Production Order','Production Order','BOM','PrepForMRP','MRP','Planned Order','Approve Stock Reservations'];
 const emptyLine=()=>({fg_name:'',description:'',quantity:1,unit_price:0});
 function Badge({s}){return <span className={'badge '+s.toLowerCase()}>{s}</span>}
